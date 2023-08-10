@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 65px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(90deg,#672280,#A626D3);
   color: white;
+  padding: 20px;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-header {
+  width: 32px; 
+  height: 27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-title {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+main {
+  padding: 36px;
+}
+
+.header-project {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.grid-form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 16px;
+}
+
+.form-button {
+  border-radius: 5px;
+  grid-column: span 2;
+  background: linear-gradient(90deg,#672280,#A626D3);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  font-size: 12px;
+}
+
+.meme-image {
+  width: 100%;
+}
+
+.meme {
+  margin-top: 16px;
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bottom {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.meme-container {
+  position: relative;
+  max-width: 100%;
+margin-top: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 0px;
+}
+
+.top-caption,
+.bottom-caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.top-caption {
+  top: 16px;
+}
+
+.bottom-caption {
+  bottom: 16px;
 }
